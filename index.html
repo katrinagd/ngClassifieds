@@ -46,7 +46,7 @@
     Clear
   </md-button>
   </div>
-  
+
 </div>
 
 <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
@@ -85,7 +85,8 @@
   <md-card ng-repeat="classified in classifieds | 
                       filter: classifiedsFilter |
                       filter: category" 
-                      flex="30">
+                      flex="30"
+                      class="classified">
      <img ng-src="{{ classified.image }}" alt="">
      <md-card-content>
          <div class="classified-info" ng-show="!showContact">
