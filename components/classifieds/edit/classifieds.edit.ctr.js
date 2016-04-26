@@ -7,13 +7,11 @@
     .controller('editClassifiedsController', function($state, $scope, $mdSidenav, $mdDialog, $timeout, classifiedsFactory) {
 
       var vm = this;
-
+      vm.classifieds = classifiedsFactory.ref;
       vm.closeSidebar = closeSidebar;
       vm.saveEdit = saveEdit;
-
       vm.sidebarTitle = 'Edit Classifed';
-
-      vm.classified = $state.params.classified;
+      vm.classified = vm.classifieds.$getRecord($state.params.id);
 
       $timeout(function() {
         $mdSidenav('left').open();    
@@ -47,9 +45,11 @@
 
       function saveEdit() {
         // Need to clear the form after, or else it will be populated when we go to add new classifieds
-        $scope.sidenavOpen = false;
-        // showToast('Edit Saved');
-        $scope.$emit('editSaved', 'Edit Saved');
+        vm.classifieds.$save(vm.classified).then(function() {
+          $scope.sidenavOpen = false;
+          // showToast('Edit Saved');
+          $scope.$emit('editSaved', 'Edit Saved');
+        });
       }
 
 

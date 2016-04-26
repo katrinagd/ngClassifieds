@@ -4,6 +4,11 @@ md-card img {
   min-height: 0px;
 }
 
+
+.md-errors-spacer {
+  float: none !important;
+}
+
 button .material-icons {
   margin-top: 7px;
 }
