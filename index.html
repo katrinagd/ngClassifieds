@@ -1,29 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ngClassifieds</title>
-	<link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
-	<link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+  <head>
+    <title>ngClassifieds</title>
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
 
-<body ng-app="ngClassifieds">
+  <!-- Setting the right viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<ui-view></ui-view>
+  </head>
+  <body ng-app="ngClassifieds">
 
-<script src="node_modules/angular/angular.js"></script>
-<script src="node_modules/angular-animate/angular-animate.js"></script>
-<script src="node_modules/angular-aria/angular-aria.js"></script>
-<script src="node_modules/angular-material/angular-material.js"></script>
-<script src="node_modules/angular-messages/angular-messages.js"></script>
-<script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="scripts/app.js"></script>
-<script src="components/classifieds/classifieds.ctr.js"></script>
-<script src="components/classifieds/classifieds.fac.js"></script>
-<script src="components/classifieds/new/classifieds.new.ctr.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js"></script>
+    <div ui-view></div>
+    
 
-</body>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="components/classifieds/classifieds.ctr.js"></script>
+    <script src="components/classifieds/classifieds.fac.js"></script>
+    <script src="components/classifieds/new/classifieds.new.ctr.js"></script>
+    <script src="components/classifieds/edit/classifieds.edit.ctr.js"></script>
+
+  </body>
 </html>
