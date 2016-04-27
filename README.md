@@ -9,4 +9,6 @@ Learned how to use:
 - implement filters and hiding & showing parts of the UI. 
 - HTTP requests and promises. 
 - How UI router works
-- use Controller As
+- use ControllerAs
+- set up Card Directive
+- Set up Backend with Firebase (reading, adding, editing & deleting data)
